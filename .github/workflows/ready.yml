@@ -2,6 +2,7 @@ name: Assign work in progress label when pull request is updated
 on: [pull_request]
 jobs:
   working_label:
+    permissions: write-all
     runs-on: ubuntu-latest
     name: Label working progress
     steps:
