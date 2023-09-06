@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "1.9.0"
+    id("org.jlleitschuh.gradle.ktlint") version "11.5.1"
     jacoco
 }
 
@@ -17,8 +18,8 @@ repositories {
 val kotestVersion = "5.7.2"
 
 dependencies {
-    testImplementation("io.kotest:kotest-runner-junit5:${kotestVersion}")
-    testImplementation("io.kotest:kotest-assertions-core:${kotestVersion}")
+    testImplementation("io.kotest:kotest-runner-junit5:$kotestVersion")
+    testImplementation("io.kotest:kotest-assertions-core:$kotestVersion")
     testImplementation(kotlin("test"))
 }
 
