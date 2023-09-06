@@ -8,4 +8,9 @@ class CalculatorTest : FreeSpec({
         calc.sum(1, 1) shouldBe 2
     }
 
+//    "1 - 1 = 0" {
+//        val calc = Calculator()
+//        calc.subtract(1, 1) shouldBe 0
+//    }
+
 })
