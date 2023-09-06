@@ -5,5 +5,4 @@ class Calculator {
     fun subtract(a: Int, b: Int) = a - b
 
     fun multiply(a: Int, b: Int) = a * b
-
 }
