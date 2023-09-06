@@ -12,4 +12,5 @@ class CalculatorTest : FreeSpec({
         val calc = Calculator()
         calc.subtract(1, 1) shouldBe 0
     }
+
 })
