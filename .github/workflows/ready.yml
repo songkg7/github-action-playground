@@ -1,19 +1,16 @@
-name: Ready for review
-on:
-  pull_request:
-    types: [opened, ready_for_review]
-
+name: Assign work in progress label when pull request is updated
+on: [ pull_request ]
 permissions:
   pull-requests: write
-
+  contents: read
 jobs:
-  ready-for-review:
+  working_label:
     runs-on: ubuntu-latest
-    name: Label swapping
+    name: Label working progress
     steps:
-      - name: label swapping
-        uses: jinmayamashita/ready-for-review@1.0.0
+      - uses: AlbertHernandez/working-label-action@v1.0.3
         with:
-          in-progress-label: 'Work in progress'
-          ready-for-review-label: 'Ready for review'
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          work_in_progress_label: 'Work in progress'
+          ready_to_review_label: 'Ready to review'
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
