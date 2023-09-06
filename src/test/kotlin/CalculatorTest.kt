@@ -17,4 +17,9 @@ class CalculatorTest : FreeSpec({
         val calc = Calculator()
         calc.multiply(2, 3) shouldBe 6
     }
+
+    "6 / 3 = 2" {
+        val calc = Calculator()
+        calc.divide(6, 3) shouldBe 2
+    }
 })
