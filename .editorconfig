@@ -9,5 +9,4 @@ trim_trailing_whitespace = true
 
 [*.{kt,kts}]
 ij_kotlin_code_style_defaults = KOTLIN_OFFICIAL
-ij_kotlin_allow_trailing_comma = false
-ij_kotlin_allow_trailing_comma_on_call_site = false
+ij_kotlin_allow_trailing_comma = true
