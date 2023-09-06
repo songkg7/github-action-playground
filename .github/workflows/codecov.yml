@@ -23,7 +23,7 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Generate coverage report
-        run: ./gradlew clean testCoverage
+        run: ./gradlew testCoverage
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
         with:
