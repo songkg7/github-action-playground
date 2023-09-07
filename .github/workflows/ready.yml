@@ -10,14 +10,7 @@ jobs:
       - uses: wow-actions/auto-comment@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          issuesOpened: |
-            👋 @{{ author }}
-            @${{ github.actor }} has raised an issue.
-            Thank you for raising an issue. We will will investigate into the matter and get back to you as soon as possible.
-            Please make sure you have given us as much context as possible.
-
+          pullRequestOpenedReactions: 'hooray, +1'
           pullRequestOpened: |
             👋 @{{ author }}
-            @${{ github.actor }} has raised an issue.
-            Thank you for raising your pull request.
-            Please make sure you have followed our contributing guidelines. We will review it as soon as possible
+            구현하시느라 고생하셨어요! 조금만 기다리면 리뷰어가 리뷰를 해줄거에요.
